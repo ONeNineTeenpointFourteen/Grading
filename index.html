@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT GRADE CALCULATOR</title>
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <div class="screen">
+                <div class="screen-body">
+                    <div class="screen-body-item top">
+                        <div class="app-title">
+                            <div class="title">Web Design & Development 2</div>
+                            <div class="animated infinite pulse" style="font-size: 15px;">
+                                Project 2: Student  Grade  Calculator
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screen-body-item center">
+                        <div class="app-form" id="quiz-form">
+                            <div class="app-form-group">
+                                <p id="question">What is your marks in Application Development by Java?</p>
+                                <input type="number" class="app-form-control" id="marks-input" placeholder="Enter marks">
+                            </div>
+                            <div class="app-form-group buttons">
+                                <input type="button" value="Next" class="app-form-button" onclick="nextQuestion()" id="next-button">
+                            </div>
+                        </div>
+                        <div class="app-form-group showdata" id="result-section" style="display: none;">
+                            <table id="result-table">
+                                <thead>
+                                    <tr>
+                                        <th>Subject</th>
+                                        <th>Marks</th>
+                                        <th>CGPA</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="result-body"></tbody>
+                            </table>
+                            <p id="showData"></p>
+                            <p id="result"></p>
+                            <input type="button" value="Restart" class="app-form-button" onclick="restartQuiz()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <canvas id="backgroundCanvas"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
